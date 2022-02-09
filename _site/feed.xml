@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-10T00:12:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">M1 맥북 homebrew 설치방법</title><link href="http://localhost:4000/mac/m1-homebrew-install/" rel="alternate" type="text/html" title="M1 맥북 homebrew 설치방법" /><published>2022-02-09T00:00:00+09:00</published><updated>2022-02-09T00:00:00+09:00</updated><id>http://localhost:4000/mac/m1-homebrew-install</id><content type="html" xml:base="http://localhost:4000/mac/m1-homebrew-install/"><![CDATA[<p><img src="https://media.vlpt.us/images/franc/post/12d872d8-479e-40d1-ba92-f5324e60a350/brew.png" alt="homebrew" /></p>
+
+<h2 id="1-homebrew-파일-다운받기붙여넣기">1. homebrew 파일 다운받기(붙여넣기)</h2>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">/bin/bash -c "$</span><span class="o">(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="2-homebrew-설치">2. homebrew 설치</h2>
+<p>1)user_id에 자신의 계정명 넣기</p>
+
+<p>2)아래 두줄 붙여넣기</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">echo 'eval "$</span><span class="o">(</span>/opt/homebrew/bin/brew shellenv<span class="o">)</span><span class="s2">"' &gt;&gt; /Users/&lt;user_id&gt;/.zprofile
+</span><span class="gp">eval "$</span><span class="s2">(/opt/homebrew/bin/brew shellenv)"</span>
+</code></pre></div></div>
+
+<h2 id="3-homebrew-version-확인">3. homebrew version 확인</h2>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">brew —version
+</span></code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Mac" /><category term="M1" /><category term="Macbook" /><category term="Air" /><category term="homebrew" /><category term="brew" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">[MySQL]콘솔에서 DB접속 방법</title><link href="http://localhost:4000/database/mysql_ssh/" rel="alternate" type="text/html" title="[MySQL]콘솔에서 DB접속 방법" /><published>2022-02-08T00:00:00+09:00</published><updated>2022-02-08T00:00:00+09:00</updated><id>http://localhost:4000/database/mysql_ssh</id><content type="html" xml:base="http://localhost:4000/database/mysql_ssh/"><![CDATA[<p><img src="https://www.gotides.com/wp-content/uploads/2021/02/MySQLvsMariaDB.png" alt="MySQL &amp; MariaDB" /></p>
+
+<h2 id="로컬-접속">로컬 접속</h2>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mysql -u root -p
+</span></code></pre></div></div>
+
+<h2 id="원격지-접속">원격지 접속</h2>
+<p>mysql -h 원격지주소 -P 포트번호 -u 계정명 -p
+ex)</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mysql -h tistory.com -P 1111 -u itgh -p
+</span></code></pre></div></div>
+
+<h2 id="db접속">DB접속</h2>
+<p>use DB명
+ex)</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">use itgh
+</span></code></pre></div></div>
+
+<h2 id="원격지-db-바로-접속">원격지 DB 바로 접속</h2>
+<p>mysql -h ‘주소’ -P 포트번호 -u 계정명 -p DB명
+ex)</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mysql -h tistory.com -P 1111 -u itgh -p itgh
+</span></code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Database" /><category term="MySQL" /><category term="MariaDB" /><category term="DB" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">first</title><link href="http://localhost:4000/first/" rel="alternate" type="text/html" title="first" /><published>2022-02-07T00:00:00+09:00</published><updated>2022-02-07T00:00:00+09:00</updated><id>http://localhost:4000/first</id><content type="html" xml:base="http://localhost:4000/first/"><![CDATA[<p><img src="../images/2022-02-07-first/watermark.png" alt="watermark" /></p>]]></content><author><name>KH Ryu</name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
