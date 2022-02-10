@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-10T00:12:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">M1 맥북 homebrew 설치방법</title><link href="http://localhost:4000/mac/m1-homebrew-install/" rel="alternate" type="text/html" title="M1 맥북 homebrew 설치방법" /><published>2022-02-09T00:00:00+09:00</published><updated>2022-02-09T00:00:00+09:00</updated><id>http://localhost:4000/mac/m1-homebrew-install</id><content type="html" xml:base="http://localhost:4000/mac/m1-homebrew-install/"><![CDATA[<p><img src="https://media.vlpt.us/images/franc/post/12d872d8-479e-40d1-ba92-f5324e60a350/brew.png" alt="homebrew" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-10T09:43:10+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">ORA-01033 에러 발생 시</title><link href="http://localhost:4000/database/ora-01033/" rel="alternate" type="text/html" title="ORA-01033 에러 발생 시" /><published>2022-02-10T00:00:00+09:00</published><updated>2022-02-10T00:00:00+09:00</updated><id>http://localhost:4000/database/ora-01033</id><content type="html" xml:base="http://localhost:4000/database/ora-01033/"><![CDATA[<p><img src="https://media.vlpt.us/images/dainni/post/2214cf8b-57b6-42dd-8aa3-26f4ee4fd54f/Oracle-Logo.png" alt="Oracle" /></p>
+
+<p>cmd 켜서</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">C:\&gt;</span>SQLPLUS
+</code></pre></div></div>
+
+<p>접속 계정으로 로그인 안될 시</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">/as sysdba
+
+</span><span class="gp">recover database;</span><span class="w">  </span><span class="nt">--</span>복구 완료 이후
+<span class="gp">alter database open;</span><span class="w">
+</span></code></pre></div></div>
+
+<p>if ORA-00600 에러 발생 시 :</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  recover database using backup controlfile until cancel;</span><span class="w">  </span><span class="nt">--</span>복구 전으로 취소
+<span class="go">  cancel
+</span><span class="gp">  alter database open resetlogs;</span><span class="w"> </span><span class="nt">--REDO</span> LOG 리셋
+<span class="gp">  shutdown immediate;</span><span class="w">
+</span><span class="go">  startup
+</span></code></pre></div></div>
+<p>else :</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  shutdown immediate;</span><span class="w">
+</span><span class="go">  startup
+</span></code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Database" /><category term="Oracle" /><category term="DB" /><category term="ORA-01033" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">M1 맥북 homebrew 설치방법</title><link href="http://localhost:4000/mac/m1-homebrew-install/" rel="alternate" type="text/html" title="M1 맥북 homebrew 설치방법" /><published>2022-02-09T00:00:00+09:00</published><updated>2022-02-09T00:00:00+09:00</updated><id>http://localhost:4000/mac/m1-homebrew-install</id><content type="html" xml:base="http://localhost:4000/mac/m1-homebrew-install/"><![CDATA[<p><img src="https://media.vlpt.us/images/franc/post/12d872d8-479e-40d1-ba92-f5324e60a350/brew.png" alt="homebrew" /></p>
 
 <h2 id="1-homebrew-파일-다운받기붙여넣기">1. homebrew 파일 다운받기(붙여넣기)</h2>
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">/bin/bash -c "$</span><span class="o">(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="o">)</span>
