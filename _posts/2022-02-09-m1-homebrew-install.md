@@ -2,7 +2,7 @@
 layout: single
 title: "M1 맥북 homebrew 설치방법"
 categories: Mac
-tag: [M1, Macbook, Air, homebrew, brew]
+tag: [M1, Macbook, homebrew, brew]
 toc: true
 ---
 
