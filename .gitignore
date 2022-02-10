@@ -20,7 +20,8 @@ codekit-config.json
 
 # macOS
 .DS_Store
-*/.DS_Store
+_site/.DS_Store
+_site/*/.DS_Store
 
 # Jekyll generated files
 .jekyll-cache
