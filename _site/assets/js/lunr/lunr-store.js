@@ -17,8 +17,8 @@ var store = [{
         "url": "/mac/m1-homebrew-install/",
         "teaser": null
       },{
-        "title": "ORA-01033 에러 발생 시",
-        "excerpt":"cmd 켜서 C:\\&gt;SQLPLUS 접속 계정으로 로그인 안될 시 /as sysdba recover database; --복구 완료 이후 alter database open; if ORA-00600 에러 발생 시 : recover database using backup controlfile until cancel; --복구 전으로 취소 cancel alter database open resetlogs; --REDO LOG 리셋 shutdown immediate; startup else : shutdown immediate; startup...","categories": ["Database"],
+        "title": "[Oracle]ORA-01033 에러 발생 시",
+        "excerpt":"   cmd  C:\\&gt;SQLPLUS   접속 계정으로 로그인 안될 시  /as sysdba  recover database;  --복구 완료 이후 alter database open;   if ORA-00600 에러 발생 시 :    recover database using backup controlfile until cancel;  --복구 전으로 취소   cancel   alter database open resetlogs; --REDO LOG 리셋   shutdown immediate;   startup  else :    shutdown immediate;   startup  ","categories": ["Database"],
         "tags": ["Oracle","DB","ORA-01033"],
         "url": "/database/ora-01033/",
         "teaser": null
