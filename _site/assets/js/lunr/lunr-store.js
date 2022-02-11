@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "[백준] 2577",
-        "excerpt":"문제   import java.io.*;  class Main {  public static void main(String[] args) { System.out.println(\"Hello World!\");     } }  ","categories": ["Baekjoon"],
+        "excerpt":"문제 Hello World!를 출력하시오.   import java.io.*;  class Main {     public static void main(String[] args) {         System.out.println(\"Hello World!\");     } }  ","categories": ["Baekjoon"],
         "tags": ["Baekjoon","Hello World!"],
         "url": "/baekjoon/Baekjoon-2577/",
         "teaser": null
