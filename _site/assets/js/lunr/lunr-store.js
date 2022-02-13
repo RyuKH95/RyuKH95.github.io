@@ -26,6 +26,12 @@ var store = [{
         "title": "[백준] 2577",
         "excerpt":"문제 Hello World!를 출력하시오.   import java.io.*;  class Main {     public static void main(String[] args) {         System.out.println(\"Hello World!\");     } }  ","categories": ["Baekjoon"],
         "tags": ["Baekjoon","Hello World!"],
-        "url": "/baekjoon/Baekjoon-2577/",
+        "url": "/baekjoon/baekjoon-2577/",
+        "teaser": null
+      },{
+        "title": "[백준] 10718",
+        "excerpt":"문제 두 줄에 걸쳐 “강한친구 대한육군”을 한 줄에 한 번씩 출력한다.   import java.io.*;  class Main {     public static void main(String[] args) {         System.out.println(\"강한친구 대한육군\");         System.out.println(\"강한친구 대한육군\");     } }  ","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/baekjoon-10718/",
         "teaser": null
       }]
