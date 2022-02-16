@@ -64,4 +64,22 @@ var store = [{
         "tags": ["Baekjoon"],
         "url": "/baekjoon/bj-10998/",
         "teaser": null
+      },{
+        "title": "[백준] 1008",
+        "excerpt":"문제 두 정수 A와 B를 입력받은 다음, A/B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 첫째 줄에 A/B를 출력한다. 실제 정답과 출력값의 절대오차 또는 상대오차가 10-9 이하이면 정답이다. 코드 import java.util.*; public class Main{ public static void main(String args[]){ Scanner sc...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-1008/",
+        "teaser": null
+      },{
+        "title": "[백준] 10869",
+        "excerpt":"문제 두 자연수 A와 B가 주어진다. 이때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오. 입력 두 자연수 A와 B가 주어진다. (1 ≤ A, B ≤ 10,000) 출력 첫째 줄에 A+B, 둘째 줄에 A-B, 셋째 줄에 A*B, 넷째 줄에 A/B, 다섯째 줄에 A%B를 출력한다. 코드 import java.util.*; public class Main{...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-10869/",
+        "teaser": null
+      },{
+        "title": "[백준] 10926",
+        "excerpt":"문제 준하는 사이트에 회원가입을 하다가 joonas라는 아이디가 이미 존재하는 것을 보고 놀랐다. 준하는 놀람을 ??!로 표현한다. 준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어졌을 때, 놀람을 표현하는 프로그램을 작성하시오. 입력 첫째 줄에 준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어진다. 아이디는 알파벳 소문자로만 이루어져 있으며, 길이는 50자를 넘지 않는다. 출력...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-10926/",
+        "teaser": null
       }]
