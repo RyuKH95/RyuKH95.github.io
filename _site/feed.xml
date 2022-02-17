@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-16T13:35:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 10926</title><link href="http://localhost:4000/baekjoon/bj-10926/" rel="alternate" type="text/html" title="[백준] 10926" /><published>2022-02-16T00:00:00+09:00</published><updated>2022-02-16T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10926</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10926/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10926" target="_blank" class="btn btn--primary">문제</a></h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-17T09:56:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 18108</title><link href="http://localhost:4000/baekjoon/bj-18108/" rel="alternate" type="text/html" title="[백준] 18108" /><published>2022-02-17T00:00:00+09:00</published><updated>2022-02-17T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-18108</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-18108/"><![CDATA[<p>1998년생인 내가 태국에서는 2541년생?!</p>
+
+<h4 id="문제"><a href="https://www.acmicpc.net/problem/18108" target="_blank" class="btn btn--primary">문제</a></h4>
+<p>ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 도착한 팀 레드시프트 일행은 눈을 믿을 수 없었다. 공항의 대형 스크린에 올해가 2562년이라고 적혀 있던 것이었다.
+불교 국가인 태국은 불멸기원(佛滅紀元), 즉 석가모니가 열반한 해를 기준으로 연도를 세는 불기를 사용한다. 반면, 우리나라는 서기 연도를 사용하고 있다. 불기 연도가 주어질 때 이를 서기 연도로 바꿔 주는 프로그램을 작성하시오.</p>
+
+<h4 id="입력">입력</h4>
+<p>서기 연도를 알아보고 싶은 불기 연도 y가 주어진다. (1000 ≤ y ≤ 3000)</p>
+
+<h4 id="출력">출력</h4>
+<p>불기 연도를 서기 연도로 변환한 결과를 출력한다.</p>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
+		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+		<span class="kt">int</span> <span class="n">a</span><span class="o">;</span>
+		<span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">-</span> <span class="mi">543</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[1998년생인 내가 태국에서는 2541년생?!]]></summary></entry><entry><title type="html">[백준] 10926</title><link href="http://localhost:4000/baekjoon/bj-10926/" rel="alternate" type="text/html" title="[백준] 10926" /><published>2022-02-16T00:00:00+09:00</published><updated>2022-02-16T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10926</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10926/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10926" target="_blank" class="btn btn--primary">문제</a></h4>
 <p>준하는 사이트에 회원가입을 하다가 joonas라는 아이디가 이미 존재하는 것을 보고 놀랐다. 준하는 놀람을 ??!로 표현한다. 준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어졌을 때, 놀람을 표현하는 프로그램을 작성하시오.</p>
 
 <h4 id="입력">입력</h4>
@@ -14,7 +36,7 @@
 		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
 		<span class="nc">String</span> <span class="n">a</span><span class="o">;</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="s">"??!"</span><span class="o">);</span>
+        	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="s">"??!"</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 준하는 사이트에 회원가입을 하다가 joonas라는 아이디가 이미 존재하는 것을 보고 놀랐다. 준하는 놀람을 ??!로 표현한다. 준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어졌을 때, 놀람을 표현하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 10869</title><link href="http://localhost:4000/baekjoon/bj-10869/" rel="alternate" type="text/html" title="[백준] 10869" /><published>2022-02-15T00:00:00+09:00</published><updated>2022-02-15T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10869</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10869/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10869" target="_blank" class="btn btn--primary">문제</a></h4>
@@ -34,10 +56,10 @@
 		<span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">;</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
 		<span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">);</span>
+        	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">);</span>
+        	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="o">);</span>
+        	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="o">);</span>
+        	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">);</span>
 		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
@@ -101,45 +123,7 @@
 		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 10171</title><link href="http://localhost:4000/baekjoon/bj-10171/" rel="alternate" type="text/html" title="[백준] 10171" /><published>2022-02-13T00:00:00+09:00</published><updated>2022-02-13T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10171</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10171/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10171" target="_blank" class="btn btn--primary">문제</a></h4>
-<p>아래 예제와 같이 고양이를 출력하시오.</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">\    /\  
- )  ( ')  
-(  /  )  
- \(__)|  
-</span></code></pre></div></div>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span> 
-<span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\\    /\\"</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" )  ( \')"</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"(  /  )"</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" \\(__)|"</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 아래 예제와 같이 고양이를 출력하시오. \ /\ ) ( ') ( / ) \(__)|]]></summary></entry><entry><title type="html">[백준] 10172</title><link href="http://localhost:4000/baekjoon/bj-10172/" rel="alternate" type="text/html" title="[백준] 10172" /><published>2022-02-13T00:00:00+09:00</published><updated>2022-02-13T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10172</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10172/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10172" target="_blank" class="btn btn--primary">문제</a></h4>
-<p>아래 예제와 같이 개를 출력하시오.</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">|\_/|  
-|q p|   /}  
-( 0 )"""\  
-|"^"`    |  
-||_/=\\__|  
-</span></code></pre></div></div>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span> 
-<span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"|\\_/|"</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"|q p|   /}"</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"( 0 )\"\"\"\\"</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"|\"^\"`    |"</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"||_/=\\\\__|"</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 아래 예제와 같이 개를 출력하시오. |\_/| |q p| /} ( 0 )"""\ |"^"` | ||_/=\\__|]]></summary></entry><entry><title type="html">[백준] 1000</title><link href="http://localhost:4000/baekjoon/bj-1000/" rel="alternate" type="text/html" title="[백준] 1000" /><published>2022-02-13T00:00:00+09:00</published><updated>2022-02-13T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-1000</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-1000/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/1000" target="_blank" class="btn btn--primary">문제</a></h4>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 1000</title><link href="http://localhost:4000/baekjoon/bj-1000/" rel="alternate" type="text/html" title="[백준] 1000" /><published>2022-02-13T00:00:00+09:00</published><updated>2022-02-13T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-1000</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-1000/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/1000" target="_blank" class="btn btn--primary">문제</a></h4>
 
 <p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p>
 
@@ -160,7 +144,45 @@
 		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제]]></summary></entry><entry><title type="html">[백준] 10718</title><link href="http://localhost:4000/baekjoon/bj-10718/" rel="alternate" type="text/html" title="[백준] 10718" /><published>2022-02-12T00:00:00+09:00</published><updated>2022-02-12T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10718</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10718/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10718" target="_blank" class="btn btn--primary">문제</a></h4>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제]]></summary></entry><entry><title type="html">[백준] 10172</title><link href="http://localhost:4000/baekjoon/bj-10172/" rel="alternate" type="text/html" title="[백준] 10172" /><published>2022-02-13T00:00:00+09:00</published><updated>2022-02-13T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10172</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10172/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10172" target="_blank" class="btn btn--primary">문제</a></h4>
+<p>아래 예제와 같이 개를 출력하시오.</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">|\_/|  
+|q p|   /}  
+( 0 )"""\  
+|"^"`    |  
+||_/=\\__|  
+</span></code></pre></div></div>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span> 
+<span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"|\\_/|"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"|q p|   /}"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"( 0 )\"\"\"\\"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"|\"^\"`    |"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"||_/=\\\\__|"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 아래 예제와 같이 개를 출력하시오. |\_/| |q p| /} ( 0 )"""\ |"^"` | ||_/=\\__|]]></summary></entry><entry><title type="html">[백준] 10171</title><link href="http://localhost:4000/baekjoon/bj-10171/" rel="alternate" type="text/html" title="[백준] 10171" /><published>2022-02-13T00:00:00+09:00</published><updated>2022-02-13T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10171</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10171/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10171" target="_blank" class="btn btn--primary">문제</a></h4>
+<p>아래 예제와 같이 고양이를 출력하시오.</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">\    /\  
+ )  ( ')  
+(  /  )  
+ \(__)|  
+</span></code></pre></div></div>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span> 
+<span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\\    /\\"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" )  ( \')"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"(  /  )"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" \\(__)|"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 아래 예제와 같이 고양이를 출력하시오. \ /\ ) ( ') ( / ) \(__)|]]></summary></entry><entry><title type="html">[백준] 10718</title><link href="http://localhost:4000/baekjoon/bj-10718/" rel="alternate" type="text/html" title="[백준] 10718" /><published>2022-02-12T00:00:00+09:00</published><updated>2022-02-12T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-10718</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-10718/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/10718" target="_blank" class="btn btn--primary">문제</a></h4>
 <p>두 줄에 걸쳐 “강한친구 대한육군”을 한 줄에 한 번씩 출력한다.</p>
 
 <h4 id="코드">코드</h4>
@@ -171,14 +193,4 @@
         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"강한친구 대한육군"</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 줄에 걸쳐 “강한친구 대한육군”을 한 줄에 한 번씩 출력한다.]]></summary></entry><entry><title type="html">[백준] 2577</title><link href="http://localhost:4000/baekjoon/bj-2577/" rel="alternate" type="text/html" title="[백준] 2577" /><published>2022-02-11T00:00:00+09:00</published><updated>2022-02-11T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2577</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2577/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2557" target="_blank" class="btn btn--primary">문제</a></h4>
-<p>Hello World!를 출력하시오.</p>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span> 
-<span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World!"</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="Hello World!" /><summary type="html"><![CDATA[문제 Hello World!를 출력하시오.]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 줄에 걸쳐 “강한친구 대한육군”을 한 줄에 한 번씩 출력한다.]]></summary></entry></feed>
