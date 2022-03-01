@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-01T21:30:10+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 8393</title><link href="http://localhost:4000/baekjoon/bj-8393/" rel="alternate" type="text/html" title="[백준] 8393" /><published>2022-03-01T00:00:00+09:00</published><updated>2022-03-01T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-8393</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-8393/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/8393" target="\_blank" class="btn btn--primary">문제</a></h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-02T00:05:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 15552</title><link href="http://localhost:4000/baekjoon/bj-15552/" rel="alternate" type="text/html" title="[백준] 15552" /><published>2022-03-02T00:00:00+09:00</published><updated>2022-03-02T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-15552</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-15552/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/15552" target="\_blank" class="btn btn--primary">문제</a></h4>
+<p>본격적으로 for문 문제를 풀기 전에 주의해야 할 점이 있다. 입출력 방식이 느리면 여러 줄을 입력받거나 출력할 때 시간초과가 날 수 있다는 점이다.</p>
+
+<p>C++을 사용하고 있고 cin/cout을 사용하고자 한다면, cin.tie(NULL)과 sync_with_stdio(false)를 둘 다 적용해 주고, endl 대신 개행문자(\n)를 쓰자. 단, 이렇게 하면 더 이상 scanf/printf/puts/getchar/putchar 등 C의 입출력 방식을 사용하면 안 된다.</p>
+
+<p>Java를 사용하고 있다면, Scanner와 System.out.println 대신 BufferedReader와 BufferedWriter를 사용할 수 있다. BufferedWriter.flush는 맨 마지막에 한 번만 하면 된다.</p>
+
+<p>Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 수 있다. 단, 이때는 맨 끝의 개행문자까지 같이 입력받기 때문에 문자열을 저장하고 싶을 경우 .rstrip()을 추가로 해 주는 것이 좋다.</p>
+
+<p>또한 입력과 출력 스트림은 별개이므로, 테스트케이스를 전부 입력받아서 저장한 뒤 전부 출력할 필요는 없다. 테스트케이스를 하나 받은 뒤 하나 출력해도 된다.</p>
+
+<p>자세한 설명 및 다른 언어의 경우는 <a href="https://www.acmicpc.net/board/view/22716" target="\_blank">이 글</a>에 설명되어 있다.</p>
+
+<p><a href="https://www.acmicpc.net/blog/view/55" target="\_blank">이 블로그 글</a>에서 BOJ의 기타 여러 가지 팁을 볼 수 있다.</p>
+
+<h4 id="입력">입력</h4>
+<p>첫 줄에 테스트케이스의 개수 T가 주어진다. T는 최대 1,000,000이다. 다음 T줄에는 각각 두 정수 A와 B가 주어진다. A와 B는 1 이상, 1,000 이하이다.</p>
+
+<h4 id="출력">출력</h4>
+<p>각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.</p>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">{</span>
+		<span class="nc">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span> <span class="c1">//선언</span>
+                <span class="nc">BufferedWriter</span> <span class="n">bw</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedWriter</span><span class="o">(</span><span class="k">new</span> <span class="nc">OutputStreamWriter</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">));</span>   <span class="c1">//할당된 버퍼에 값 넣어주기</span>
+                <span class="kt">int</span> <span class="no">T</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span> <span class="c1">//Int</span>
+                <span class="nc">StringTokenizer</span> <span class="n">st</span><span class="o">;</span> <span class="c1">//StringTokenizer인자값에 입력 문자열 넣음</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="no">T</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+                  <span class="n">st</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringTokenizer</span><span class="o">(</span><span class="n">br</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+                  <span class="n">bw</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">())+</span><span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">st</span><span class="o">.</span><span class="na">nextToken</span><span class="o">())+</span><span class="s">"\n"</span><span class="o">);</span>
+                <span class="o">}</span>
+                <span class="n">bw</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>   <span class="c1">//남아있는 데이터를 모두 출력시킴</span>
+                <span class="n">bw</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>   <span class="c1">//스트림을 닫음</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 본격적으로 for문 문제를 풀기 전에 주의해야 할 점이 있다. 입출력 방식이 느리면 여러 줄을 입력받거나 출력할 때 시간초과가 날 수 있다는 점이다.]]></summary></entry><entry><title type="html">[백준] 8393</title><link href="http://localhost:4000/baekjoon/bj-8393/" rel="alternate" type="text/html" title="[백준] 8393" /><published>2022-03-01T00:00:00+09:00</published><updated>2022-03-01T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-8393</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-8393/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/8393" target="\_blank" class="btn btn--primary">문제</a></h4>
 <p>n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.</p>
 
 <h4 id="입력">입력</h4>
@@ -272,36 +310,4 @@
                   <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"F"</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 1330</title><link href="http://localhost:4000/baekjoon/bj-1330/" rel="alternate" type="text/html" title="[백준] 1330" /><published>2022-02-20T00:00:00+09:00</published><updated>2022-02-20T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-1330</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-1330/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/1330" target="_blank" class="btn btn--primary">문제</a></h4>
-<p>두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성하시오.</p>
-
-<h4 id="입력">입력</h4>
-<p>첫째 줄에 A와 B가 주어진다. A와 B는 공백 한 칸으로 구분되어져 있다.</p>
-
-<h4 id="출력">출력</h4>
-<p>첫째 줄에 다음 세 가지 중 하나를 출력한다.</p>
-
-<p>A가 B보다 큰 경우에는 ‘&gt;’를 출력한다.
-A가 B보다 작은 경우에는 ‘&lt;’를 출력한다.
-A와 B가 같은 경우에는 ‘==’를 출력한다.</p>
-
-<h4 id="제한">제한</h4>
-<p>-10,000 ≤ A, B ≤ 10,000</p>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
-		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-		<span class="kt">int</span> <span class="n">a</span><span class="o">,</span><span class="n">b</span><span class="o">;</span>
-		<span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                <span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="o">)</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"&gt;"</span><span class="o">);</span>
-                <span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">a</span><span class="o">&lt;</span><span class="n">b</span><span class="o">)</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"&lt;"</span><span class="o">);</span>
-                <span class="k">else</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"=="</span><span class="o">);</span>
-	<span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성하시오.]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오.]]></summary></entry></feed>
