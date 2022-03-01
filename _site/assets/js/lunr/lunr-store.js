@@ -148,4 +148,16 @@ var store = [{
         "tags": ["Baekjoon"],
         "url": "/baekjoon/bj-2739/",
         "teaser": null
+      },{
+        "title": "[백준] 10950",
+        "excerpt":"문제 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10) 출력 각 테스트 케이스마다 A+B를 출력한다. 코드 import java.util.*; public class Main{ public...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-10950/",
+        "teaser": null
+      },{
+        "title": "[백준] 8393",
+        "excerpt":"문제 n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오. 입력 첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다. 출력 1부터 n까지 합을 출력한다. 코드 import java.util.*; public class Main{ public static void main(String args[]){ Scanner sc = new Scanner(System.in); int a, sum=0; a = sc.nextInt(); for(int i=1; i&lt;=a;...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-8393/",
+        "teaser": null
       }]
