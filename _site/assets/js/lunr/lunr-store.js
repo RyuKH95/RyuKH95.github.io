@@ -166,4 +166,16 @@ var store = [{
         "tags": ["Baekjoon"],
         "url": "/baekjoon/bj-15552/",
         "teaser": null
+      },{
+        "title": "[백준] 2741",
+        "excerpt":"문제 자연수 N이 주어졌을 때, 1부터 N까지 한 줄에 하나씩 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 100,000보다 작거나 같은 자연수 N이 주어진다. 출력 첫째 줄부터 N번째 줄 까지 차례대로 출력한다. 코드 import java.util.*; public class Main{ public static void main(String args[]){ Scanner sc = new Scanner(System.in); int a; a =...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-2741/",
+        "teaser": null
+      },{
+        "title": "[백준] 2742",
+        "excerpt":"문제 자연수 N이 주어졌을 때, N부터 1까지 한 줄에 하나씩 출력하는 프로그램을 작성하시오. 입력 첫째 줄에 100,000보다 작거나 같은 자연수 N이 주어진다. 출력 첫째 줄부터 N번째 줄 까지 차례대로 출력한다. 코드 import java.util.*; public class Main{ public static void main(String args[]){ Scanner sc = new Scanner(System.in); int a; a =...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-2742/",
+        "teaser": null
       }]
