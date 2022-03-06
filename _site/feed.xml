@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-04T09:41:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 2742</title><link href="http://localhost:4000/baekjoon/bj-2742/" rel="alternate" type="text/html" title="[백준] 2742" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2742</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2742/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2742" target="\_blank" class="btn btn--primary">문제</a></h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-05T00:34:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 11021</title><link href="http://localhost:4000/baekjoon/bj-11021/" rel="alternate" type="text/html" title="[백준] 11021" /><published>2022-03-05T00:00:00+09:00</published><updated>2022-03-05T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-11021</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-11021/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/11021" target="\_blank" class="btn btn--primary">문제</a></h4>
+<p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p>
+
+<h4 id="입력">입력</h4>
+<p>첫째 줄에 테스트 케이스의 개수 T가 주어진다.</p>
+
+<p>각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10)</p>
+
+<h4 id="출력">출력</h4>
+<p>각 테스트 케이스마다 “Case #x: “를 출력한 다음, A+B를 출력한다. 테스트 케이스 번호는 1부터 시작한다.</p>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
+		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+		<span class="kt">int</span> <span class="n">t</span><span class="o">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+		<span class="n">t</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">t</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+                        <span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                        <span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Case #"</span> <span class="o">+</span> <span class="o">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="o">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">));</span>
+                <span class="o">}</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 2742</title><link href="http://localhost:4000/baekjoon/bj-2742/" rel="alternate" type="text/html" title="[백준] 2742" /><published>2022-03-04T00:00:00+09:00</published><updated>2022-03-04T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2742</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2742/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2742" target="\_blank" class="btn btn--primary">문제</a></h4>
 <p>자연수 N이 주어졌을 때, N부터 1까지 한 줄에 하나씩 출력하는 프로그램을 작성하시오.</p>
 
 <h4 id="입력">입력</h4>
@@ -262,39 +287,4 @@
                 <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">h</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">m</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.]]></summary></entry><entry><title type="html">[백준] 14681</title><link href="http://localhost:4000/baekjoon/bj-14681/" rel="alternate" type="text/html" title="[백준] 14681" /><published>2022-02-23T00:00:00+09:00</published><updated>2022-02-23T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-14681</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-14681/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/14681" target="_blank" class="btn btn--primary">문제</a></h4>
-<p>흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. “Quadrant n”은 “제n사분면”이라는 뜻이다.
-<img src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/14681/1.png" alt="image" /></p>
-
-<p>예를 들어, 좌표가 (12, 5)인 점 A는 x좌표와 y좌표가 모두 양수이므로 제1사분면에 속한다. 점 B는 x좌표가 음수이고 y좌표가 양수이므로 제2사분면에 속한다.</p>
-
-<p>점의 좌표를 입력받아 그 점이 어느 사분면에 속하는지 알아내는 프로그램을 작성하시오. 단, x좌표와 y좌표는 모두 양수나 음수라고 가정한다.</p>
-
-<h4 id="입력">입력</h4>
-<p>첫 줄에는 정수 x가 주어진다. (−1000 ≤ x ≤ 1000; x ≠ 0) 다음 줄에는 정수 y가 주어진다. (−1000 ≤ y ≤ 1000; y ≠ 0)</p>
-
-<h4 id="출력">출력</h4>
-<p>점 (x, y)의 사분면 번호(1, 2, 3, 4 중 하나)를 출력한다.</p>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
-		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-		<span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">;</span>
-		<span class="n">x</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                <span class="n">y</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                <span class="k">if</span><span class="o">(</span><span class="n">x</span><span class="o">&gt;</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">y</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"1"</span><span class="o">);</span>
-                <span class="o">}</span>
-                <span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">x</span><span class="o">&lt;</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">y</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"2"</span><span class="o">);</span>
-                <span class="o">}</span>
-                <span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">x</span><span class="o">&lt;</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">y</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"3"</span><span class="o">);</span>
-                <span class="o">}</span>
-                <span class="k">else</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"4"</span><span class="o">);</span>
-                <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. “Quadrant n”은 “제n사분면”이라는 뜻이다.]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.]]></summary></entry></feed>
