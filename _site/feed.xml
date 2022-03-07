@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-05T00:34:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 11021</title><link href="http://localhost:4000/baekjoon/bj-11021/" rel="alternate" type="text/html" title="[백준] 11021" /><published>2022-03-05T00:00:00+09:00</published><updated>2022-03-05T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-11021</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-11021/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/11021" target="\_blank" class="btn btn--primary">문제</a></h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-06T13:47:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 11022</title><link href="http://localhost:4000/baekjoon/bj-11022/" rel="alternate" type="text/html" title="[백준] 11022" /><published>2022-03-06T00:00:00+09:00</published><updated>2022-03-06T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-11022</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-11022/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/11022" target="\_blank" class="btn btn--primary">문제</a></h4>
+<p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p>
+
+<h4 id="입력">입력</h4>
+<p>첫째 줄에 테스트 케이스의 개수 T가 주어진다.</p>
+
+<p>각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10)</p>
+
+<h4 id="출력">출력</h4>
+<p>각 테스트 케이스마다 “Case #x: A + B = C” 형식으로 출력한다. x는 테스트 케이스 번호이고 1부터 시작하며, C는 A+B이다.</p>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
+		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+		<span class="kt">int</span> <span class="n">t</span><span class="o">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+		<span class="n">t</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">t</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+                        <span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                        <span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Case #"</span> <span class="o">+</span> <span class="o">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">" + "</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="s">" = "</span> <span class="o">+</span> <span class="o">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">));</span>
+                <span class="o">}</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 11021</title><link href="http://localhost:4000/baekjoon/bj-11021/" rel="alternate" type="text/html" title="[백준] 11021" /><published>2022-03-05T00:00:00+09:00</published><updated>2022-03-05T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-11021</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-11021/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/11021" target="\_blank" class="btn btn--primary">문제</a></h4>
 <p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p>
 
 <h4 id="입력">입력</h4>
@@ -246,45 +271,4 @@
                 <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">h</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">m</span><span class="o">);</span>
 	<span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간편하게 만드는 인공지능 오븐을 개발하려고 한다. 인공지능 오븐을 사용하는 방법은 적당한 양의 오리 훈제 재료를 인공지능 오븐에 넣으면 된다. 그러면 인공지능 오븐은 오븐구이가 끝나는 시간을 분 단위로 자동적으로 계산한다.]]></summary></entry><entry><title type="html">[백준] 2884</title><link href="http://localhost:4000/baekjoon/bj-2884/" rel="alternate" type="text/html" title="[백준] 2884" /><published>2022-02-24T00:00:00+09:00</published><updated>2022-02-24T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2884</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2884/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2884" target="_blank" class="btn btn--primary">문제</a></h4>
-<p>상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.</p>
-
-<p>상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.</p>
-
-<p>이런 상근이를 불쌍하게 보던, 창영이는 자신이 사용하는 방법을 추천해 주었다.</p>
-
-<p>바로 “45분 일찍 알람 설정하기”이다.</p>
-
-<p>이 방법은 단순하다. 원래 설정되어 있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 어차피 알람 소리를 들으면, 알람을 끄고 조금 더 잘 것이기 때문이다. 이 방법을 사용하면, 매일 아침 더 잤다는 기분을 느낄 수 있고, 학교도 지각하지 않게 된다.</p>
-
-<p>현재 상근이가 설정한 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.</p>
-
-<h4 id="입력">입력</h4>
-<p>첫째 줄에 두 정수 H와 M이 주어진다. (0 ≤ H ≤ 23, 0 ≤ M ≤ 59) 그리고 이것은 현재 상근이가 설정한 놓은 알람 시간 H시 M분을 의미한다.</p>
-
-<p>입력 시간은 24시간 표현을 사용한다. 24시간 표현에서 하루의 시작은 0:0(자정)이고, 끝은 23:59(다음날 자정 1분 전)이다. 시간을 나타낼 때, 불필요한 0은 사용하지 않는다.</p>
-
-<h4 id="출력">출력</h4>
-<p>첫째 줄에 상근이가 창영이의 방법을 사용할 때, 설정해야 하는 알람 시간을 출력한다. (입력과 같은 형태로 출력하면 된다.)</p>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
-		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-		<span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">;</span>
-		<span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                <span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                <span class="kt">int</span> <span class="n">h</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
-                <span class="n">h</span> <span class="o">=</span> <span class="n">a</span><span class="o">;</span>
-                <span class="n">m</span> <span class="o">=</span> <span class="n">b</span><span class="o">-</span><span class="mi">45</span><span class="o">;</span>
-                <span class="k">if</span><span class="o">(</span><span class="n">m</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-                    <span class="n">m</span> <span class="o">=</span> <span class="mi">60</span><span class="o">+</span><span class="n">m</span><span class="o">;</span>
-                    <span class="n">h</span> <span class="o">-=</span> <span class="mi">1</span><span class="o">;</span>
-                <span class="k">if</span><span class="o">(</span><span class="n">h</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">)</span>
-                    <span class="n">h</span> <span class="o">=</span> <span class="mi">23</span><span class="o">;</span>
-                <span class="o">}</span>
-                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">h</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">m</span><span class="o">);</span>
-	<span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간편하게 만드는 인공지능 오븐을 개발하려고 한다. 인공지능 오븐을 사용하는 방법은 적당한 양의 오리 훈제 재료를 인공지능 오븐에 넣으면 된다. 그러면 인공지능 오븐은 오븐구이가 끝나는 시간을 분 단위로 자동적으로 계산한다.]]></summary></entry></feed>
