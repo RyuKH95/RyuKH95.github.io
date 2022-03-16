@@ -238,4 +238,10 @@ var store = [{
         "tags": ["Baekjoon"],
         "url": "/baekjoon/bj-2562/",
         "teaser": null
+      },{
+        "title": "[백준] 2577",
+        "excerpt":"문제 세 개의 자연수 A, B, C가 주어질 때 A × B × C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지를 구하는 프로그램을 작성하시오. 예를 들어 A = 150, B = 266, C = 427 이라면 A × B × C = 150 × 266 × 427 =...","categories": ["Baekjoon"],
+        "tags": ["Baekjoon"],
+        "url": "/baekjoon/bj-2577/",
+        "teaser": null
       }]

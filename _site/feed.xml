@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-14T15:10:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 2562</title><link href="http://localhost:4000/baekjoon/bj-2562/" rel="alternate" type="text/html" title="[백준] 2562" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2562</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2562/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2562" target="\_blank" class="btn btn--primary">문제</a></h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-15T10:39:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 2577</title><link href="http://localhost:4000/baekjoon/bj-2577/" rel="alternate" type="text/html" title="[백준] 2577" /><published>2022-03-15T00:00:00+09:00</published><updated>2022-03-15T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2577</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2577/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2577" target="\_blank" class="btn btn--primary">문제</a></h4>
+<p>세 개의 자연수 A, B, C가 주어질 때 A × B × C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지를 구하는 프로그램을 작성하시오.</p>
+
+<p>예를 들어 A = 150, B = 266, C = 427 이라면 A × B × C = 150 × 266 × 427 = 17037300 이 되고, 계산한 결과 17037300 에는 0이 3번, 1이 1번, 3이 2번, 7이 2번 쓰였다.</p>
+
+<h4 id="입력">입력</h4>
+<p>첫째 줄에 A, 둘째 줄에 B, 셋째 줄에 C가 주어진다. A, B, C는 모두 100보다 크거나 같고, 1,000보다 작은 자연수이다.</p>
+
+<h4 id="출력">출력</h4>
+<p>첫째 줄에는 A × B × C의 결과에 0 이 몇 번 쓰였는지 출력한다. 마찬가지로 둘째 줄부터 열 번째 줄까지 A × B × C의 결과에 1부터 9까지의 숫자가 각각 몇 번 쓰였는지 차례로 한 줄에 하나씩 출력한다.</p>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
+		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+		<span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">,</span> <span class="n">c</span><span class="o">,</span> <span class="n">sum</span><span class="o">,</span> <span class="n">cnt</span><span class="o">;</span>
+                <span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                <span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                <span class="n">c</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+                <span class="n">sum</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="o">*</span> <span class="n">c</span><span class="o">;</span>
+                <span class="nc">String</span> <span class="n">sums</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">sum</span><span class="o">);</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+                    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">sums</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+                        <span class="k">if</span><span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">sums</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">j</span><span class="o">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="o">)))</span>
+                            <span class="n">cnt</span><span class="o">++;</span>
+                    <span class="o">}</span>
+                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">cnt</span><span class="o">);</span>
+                <span class="o">}</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 세 개의 자연수 A, B, C가 주어질 때 A × B × C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지를 구하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 2562</title><link href="http://localhost:4000/baekjoon/bj-2562/" rel="alternate" type="text/html" title="[백준] 2562" /><published>2022-03-14T00:00:00+09:00</published><updated>2022-03-14T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2562</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2562/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2562" target="\_blank" class="btn btn--primary">문제</a></h4>
 <p>9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.<br />
 예를 들어, 서로 다른 9개의 자연수<br />
 3, 29, 38, 12, 57, 74, 40, 85, 61<br />
@@ -239,31 +271,6 @@ N이 주어졌을 때, N의 사이클의 길이를 구하는 프로그램을 작
                         <span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
                         <span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
                         <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Case #"</span> <span class="o">+</span> <span class="o">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">" + "</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="s">" = "</span> <span class="o">+</span> <span class="o">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">));</span>
-                <span class="o">}</span>
-        <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 11021</title><link href="http://localhost:4000/baekjoon/bj-11021/" rel="alternate" type="text/html" title="[백준] 11021" /><published>2022-03-05T00:00:00+09:00</published><updated>2022-03-05T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-11021</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-11021/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/11021" target="\_blank" class="btn btn--primary">문제</a></h4>
-<p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p>
-
-<h4 id="입력">입력</h4>
-<p>첫째 줄에 테스트 케이스의 개수 T가 주어진다.</p>
-
-<p>각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10)</p>
-
-<h4 id="출력">출력</h4>
-<p>각 테스트 케이스마다 “Case #x: “를 출력한 다음, A+B를 출력한다. 테스트 케이스 번호는 1부터 시작한다.</p>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
-		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-		<span class="kt">int</span> <span class="n">t</span><span class="o">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
-		<span class="n">t</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">t</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
-                        <span class="n">a</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                        <span class="n">b</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
-                        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Case #"</span> <span class="o">+</span> <span class="o">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="o">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">));</span>
                 <span class="o">}</span>
         <span class="o">}</span>
 <span class="o">}</span>
