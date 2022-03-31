@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-29T17:42:09+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 2908</title><link href="http://localhost:4000/baekjoon/bj-2908/" rel="alternate" type="text/html" title="[백준] 2908" /><published>2022-03-29T00:00:00+09:00</published><updated>2022-03-29T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2908</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2908/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2908" target="\_blank" class="btn btn--primary">문제</a></h4>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-30T15:21:22+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IT Hyun</title><subtitle>DBA &amp; backend</subtitle><author><name>KH Ryu</name></author><entry><title type="html">[백준] 5622</title><link href="http://localhost:4000/baekjoon/bj-5622/" rel="alternate" type="text/html" title="[백준] 5622" /><published>2022-03-30T00:00:00+09:00</published><updated>2022-03-30T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-5622</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-5622/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/5622" target="\_blank" class="btn btn--primary">문제</a></h4>
+<p>상근이의 할머니는 아래 그림과 같이 오래된 다이얼 전화기를 사용한다.
+<img src="https://upload.acmicpc.net/9c88dd24-3a4c-4a09-bc50-e6496958214d/-/preview/" alt="image" width="50%" height="50%" /><br />
+전화를 걸고 싶은 번호가 있다면, 숫자를 하나를 누른 다음에 금속 핀이 있는 곳 까지 시계방향으로 돌려야 한다. 숫자를 하나 누르면 다이얼이 처음 위치로 돌아가고, 다음 숫자를 누르려면 다이얼을 처음 위치에서 다시 돌려야 한다.<br />
+숫자 1을 걸려면 총 2초가 필요하다. 1보다 큰 수를 거는데 걸리는 시간은 이보다 더 걸리며, 한 칸 옆에 있는 숫자를 걸기 위해선 1초씩 더 걸린다.<br />
+상근이의 할머니는 전화 번호를 각 숫자에 해당하는 문자로 외운다. 즉, 어떤 단어를 걸 때, 각 알파벳에 해당하는 숫자를 걸면 된다. 예를 들어, UNUCIC는 868242와 같다.<br />
+할머니가 외운 단어가 주어졌을 때, 이 전화를 걸기 위해서 필요한 최소 시간을 구하는 프로그램을 작성하시오.</p>
+
+<h4 id="입력">입력</h4>
+<p>첫째 줄에 알파벳 대문자로 이루어진 단어가 주어진다. 단어의 길이는 2보다 크거나 같고, 15보다 작거나 같다.</p>
+
+<h4 id="출력">출력</h4>
+<p>첫째 줄에 다이얼을 걸기 위해서 필요한 최소 시간을 출력한다.</p>
+
+<h4 id="코드">코드</h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
+		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+                <span class="nc">String</span> <span class="n">line</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+                <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="na">trim</span><span class="o">();</span>
+                <span class="kt">char</span><span class="o">[]</span> <span class="n">word</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">();</span>
+                <span class="kt">int</span><span class="o">[]</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">word</span><span class="o">.</span><span class="na">length</span><span class="o">];</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">word</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                    <span class="k">switch</span><span class="o">(</span><span class="n">word</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">{</span>
+                        <span class="k">case</span> <span class="sc">'A'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'B'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'C'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">case</span> <span class="sc">'D'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'E'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'F'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">3</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">case</span> <span class="sc">'G'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'H'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'I'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">case</span> <span class="sc">'J'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'K'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'L'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">case</span> <span class="sc">'M'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'N'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'O'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">6</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">case</span> <span class="sc">'P'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'Q'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'R'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'S'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">7</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">case</span> <span class="sc">'T'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'U'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'V'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">8</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">case</span> <span class="sc">'W'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'X'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'Y'</span><span class="o">:</span>
+                        <span class="k">case</span> <span class="sc">'Z'</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">9</span><span class="o">;</span>
+                            <span class="k">break</span><span class="o">;</span>
+                        <span class="k">default</span><span class="o">:</span>
+                            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+                <span class="kt">int</span> <span class="n">sum</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                    <span class="c1">// System.out.print(a[i] + " ");</span>
+                    <span class="n">sum</span> <span class="o">+=</span> <span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]+</span><span class="mi">1</span><span class="o">);</span>
+                <span class="o">}</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sum</span><span class="o">);</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 상근이의 할머니는 아래 그림과 같이 오래된 다이얼 전화기를 사용한다. 전화를 걸고 싶은 번호가 있다면, 숫자를 하나를 누른 다음에 금속 핀이 있는 곳 까지 시계방향으로 돌려야 한다. 숫자를 하나 누르면 다이얼이 처음 위치로 돌아가고, 다음 숫자를 누르려면 다이얼을 처음 위치에서 다시 돌려야 한다. 숫자 1을 걸려면 총 2초가 필요하다. 1보다 큰 수를 거는데 걸리는 시간은 이보다 더 걸리며, 한 칸 옆에 있는 숫자를 걸기 위해선 1초씩 더 걸린다. 상근이의 할머니는 전화 번호를 각 숫자에 해당하는 문자로 외운다. 즉, 어떤 단어를 걸 때, 각 알파벳에 해당하는 숫자를 걸면 된다. 예를 들어, UNUCIC는 868242와 같다. 할머니가 외운 단어가 주어졌을 때, 이 전화를 걸기 위해서 필요한 최소 시간을 구하는 프로그램을 작성하시오.]]></summary></entry><entry><title type="html">[백준] 2908</title><link href="http://localhost:4000/baekjoon/bj-2908/" rel="alternate" type="text/html" title="[백준] 2908" /><published>2022-03-29T00:00:00+09:00</published><updated>2022-03-29T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-2908</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-2908/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/2908" target="\_blank" class="btn btn--primary">문제</a></h4>
 <p>상근이의 동생 상수는 수학을 정말 못한다. 상수는 숫자를 읽는데 문제가 있다. 이렇게 수학을 못하는 상수를 위해서 상근이는 수의 크기를 비교하는 문제를 내주었다. 상근이는 세 자리 수 두 개를 칠판에 써주었다. 그 다음에 크기가 큰 수를 말해보라고 했다.<br />
 상수는 수를 다른 사람과 다르게 거꾸로 읽는다. 예를 들어, 734와 893을 칠판에 적었다면, 상수는 이 수를 437과 398로 읽는다. 따라서, 상수는 두 수중 큰 수인 437을 큰 수라고 말할 것이다.<br />
 두 수가 주어졌을 때, 상수의 대답을 출력하는 프로그램을 작성하시오.</p>
@@ -282,47 +361,4 @@ a: 합을 구해야 하는 정수 n개가 저장되어 있는 배열 (0 ≤ a[i]
         <span class="k">return</span> <span class="n">ans</span><span class="o">;</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 정수 n개가 주어졌을 때, n개의 합을 구하는 함수를 작성하시오. 작성해야 하는 함수는 다음과 같다.]]></summary></entry><entry><title type="html">[백준] 4344</title><link href="http://localhost:4000/baekjoon/bj-4344/" rel="alternate" type="text/html" title="[백준] 4344" /><published>2022-03-19T00:00:00+09:00</published><updated>2022-03-19T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/bj-4344</id><content type="html" xml:base="http://localhost:4000/baekjoon/bj-4344/"><![CDATA[<h4 id="문제"><a href="https://www.acmicpc.net/problem/4344" target="\_blank" class="btn btn--primary">문제</a></h4>
-<p>대학생 새내기들의 90%는 자신이 반에서 평균은 넘는다고 생각한다. 당신은 그들에게 슬픈 진실을 알려줘야 한다.</p>
-
-<h4 id="입력">입력</h4>
-<p>첫째 줄에는 테스트 케이스의 개수 C가 주어진다.<br />
-둘째 줄부터 각 테스트 케이스마다 학생의 수 N(1 ≤ N ≤ 1000, N은 정수)이 첫 수로 주어지고, 이어서 N명의 점수가 주어진다. 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.</p>
-
-<h4 id="출력">출력</h4>
-<p>각 케이스마다 한 줄씩 평균을 넘는 학생들의 비율을 반올림하여 소수점 셋째 자리까지 출력한다.</p>
-
-<h4 id="코드">코드</h4>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span><span class="o">{</span>
-	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[]){</span>
-		<span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-                <span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(),</span> <span class="n">s</span><span class="o">;</span>
-                <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
-                <span class="nc">String</span><span class="o">[]</span> <span class="n">line</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">[</span><span class="n">t</span><span class="o">];</span>
-                <span class="kt">int</span><span class="o">[]</span> <span class="n">score</span><span class="o">,</span> <span class="n">sum</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">t</span><span class="o">];</span>
-                <span class="kt">float</span><span class="o">[]</span> <span class="n">avg</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">float</span><span class="o">[</span><span class="n">t</span><span class="o">];</span>
-                
-                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">t</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-                    <span class="n">sum</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="mi">0</span><span class="o">;</span>
-                    <span class="n">avg</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="mi">0</span><span class="o">;</span>
-                    <span class="n">line</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
-                    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">line</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">split</span><span class="o">(</span><span class="s">" "</span><span class="o">)[</span><span class="mi">0</span><span class="o">]);</span>
-                    <span class="n">score</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">num</span><span class="o">];</span>
-                    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">score</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
-                        <span class="n">score</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">line</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">split</span><span class="o">(</span><span class="s">" "</span><span class="o">)[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="o">]);</span>
-                        <span class="n">sum</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">+=</span> <span class="n">score</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
-                    <span class="o">}</span>
-                    <span class="n">avg</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">sum</span><span class="o">[</span><span class="n">i</span><span class="o">]/</span><span class="n">num</span><span class="o">;</span>
-                    
-                    <span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
-                    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">score</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
-                        <span class="k">if</span><span class="o">(</span><span class="n">avg</span><span class="o">[</span><span class="n">i</span><span class="o">]&lt;</span><span class="n">score</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="o">{</span>
-                            <span class="n">count</span><span class="o">++;</span>
-                        <span class="o">}</span>
-                    <span class="o">}</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">String</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="s">"%.3f"</span><span class="o">,</span> <span class="o">((</span><span class="kt">float</span><span class="o">)</span><span class="n">count</span><span class="o">/</span><span class="n">score</span><span class="o">.</span><span class="na">length</span><span class="o">*</span><span class="mi">100</span><span class="o">))</span> <span class="o">+</span> <span class="s">"%"</span><span class="o">);</span>
-                <span class="o">}</span>
-        <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 대학생 새내기들의 90%는 자신이 반에서 평균은 넘는다고 생각한다. 당신은 그들에게 슬픈 진실을 알려줘야 한다.]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name>KH Ryu</name></author><category term="Baekjoon" /><category term="Baekjoon" /><summary type="html"><![CDATA[문제 정수 n개가 주어졌을 때, n개의 합을 구하는 함수를 작성하시오. 작성해야 하는 함수는 다음과 같다.]]></summary></entry></feed>
